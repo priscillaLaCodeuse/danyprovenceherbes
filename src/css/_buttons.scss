@@ -1,0 +1,53 @@
+@use "settings";
+
+button {
+  background: settings.$color1;
+  border: 1px solid settings.$color1;
+  padding: 10px 20px;
+  color: settings.$white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+
+  i {
+    color: settings.$white;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background: transparent;
+    color: settings.$color1;
+
+    i {
+      color: settings.$color1;
+    }
+  }
+}
+
+.button-green,
+.button-white {
+  background: transparent;
+}
+
+.button-green {
+  color: settings.$color1;
+
+  i {
+    color: settings.$color1;
+  }
+
+  &:hover {
+    background: settings.$color1;
+    color: settings.$white;
+  }
+}
+
+.button-white {
+  border: 1px solid settings.$white;
+
+  &:hover {
+    background: settings.$white;
+    color: settings.$color1 !important;
+    text-shadow: none !important;
+  }
+}

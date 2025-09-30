@@ -1,0 +1,232 @@
+@use "settings";
+
+#hero {
+  background: url(../images/hero1.webp) center/cover;
+
+  margin: 50px 5vw 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px settings.$blackShadow;
+
+  .container {
+    background: settings.$blackOverlay;
+
+    border-radius: 10px;
+    justify-content: end;
+    align-items: end;
+    padding: 100px 50px;
+
+    div {
+      width: 75%;
+      flex-direction: column;
+      text-align: right;
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+        width: 100%;
+      }
+
+      h1,
+      .span-title,
+      p,
+      button {
+        color: settings.$white;
+        text-shadow: 0 0 10px settings.$black;
+      }
+
+      h1,
+      .span-title,
+      p {
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .span-title {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+#avantages {
+  .container {
+    justify-content: space-between;
+
+    .item {
+      width: 30%;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      h5 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+#nos-produits {
+  text-align: center;
+
+  h2 {
+    width: 90vw;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px settings.$blackShadow;
+    color: settings.$white;
+    text-shadow: 0 0 2px settings.$black;
+    padding: 100px 100px 150px;
+    text-transform: uppercase;
+    background: url(../images/bg-products.webp) center/cover;
+    background-attachment: fixed;
+  }
+
+  .products-container {
+    width: 85vw;
+    margin: -150px auto 0;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 1320px) {
+      grid-template-columns: 1fr;
+    }
+
+    .item {
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px settings.$black;
+      background: settings.$white;
+      padding: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      h6 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+#trio {
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px settings.$black;
+
+  .dg {
+    grid-template-columns: 40% 60%;
+    padding: 0 5vw;
+    align-items: center;
+    background: url(../images/ardoise3.png) center/cover;
+    border-radius: 10px;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-container {
+      border-radius: 10px;
+      width: 100%;
+
+      img {
+        margin: 50px auto 0;
+        width: 100%;
+        filter: drop-shadow(0 0 10px settings.$black);
+
+        @media screen and (max-width: 992px) {
+          width: 50vw;
+          margin: 50px auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      h2 {
+        font-family: settings.$title-font;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        margin: 50px 0;
+        color: settings.$white;
+        text-shadow: 0 0 2px settings.$black;
+
+        @media screen and (max-width: 992px) {
+          margin: 20px 0 0;
+        }
+      }
+    }
+
+    .text-container {
+      padding: 100px 50px;
+
+      @media screen and (max-width: 992px) {
+        padding: 20px 50px 50px;
+        text-align: center;
+      }
+
+      h3,
+      p {
+        margin-bottom: 50px;
+        color: settings.$white;
+      }
+
+      h3 {
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
+
+      p {
+        text-align: justify;
+
+        @media screen and (max-width: 992px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+#about {
+  width: 90vw;
+  margin: 0 auto 50px;
+  border-radius: 10px;
+  background: url(../images/bg-about.webp) center/cover;
+  box-shadow: 0 0 10px settings.$blackShadow;
+
+  .container {
+    background: settings.$blackOverlay;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    .text-container {
+      border-radius: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2,
+      p {
+        margin: 0 auto;
+        text-align: center;
+        color: settings.$white;
+        text-shadow: 0 0 2px settings.$black;
+      }
+
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

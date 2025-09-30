@@ -1,0 +1,128 @@
+// ======
+// COLORS
+// ======
+$color1: #297f00;
+$color1Shadow: rgba(41, 127, 0, 0.1);
+$title: #222;
+$text: #777;
+$black: #000;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$blackOverlay: rgba(0, 0, 0, 0.2);
+$white: #fff;
+$whiteShadow: rgba(255, 255, 255, 0.25);
+$whiteOverlay: rgba(255, 255, 255, 0.2);
+$border: #ececec;
+$sup: crimson;
+
+// =====
+// FONTS
+// =====
+@font-face {
+  font-family: "abrilFatface";
+  src: url(../fonts/AbrilFatface.ttf);
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/LatoRegular.ttf");
+}
+
+$title-font: "abrilFatface", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$body-font: "lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+// =======
+// GENERAL
+// =======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+  transition: all 0.2s ease;
+  font-family: $body-font;
+  color: $text;
+}
+
+p {
+  line-height: 30px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+
+  * {
+    cursor: pointer;
+  }
+}
+
+// =========
+// CONTAINER
+// =========
+.container {
+  padding: 50px 5vw;
+}
+
+// ===========
+// FLEX & GRID
+// ===========
+.df {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dg {
+  display: grid;
+  gap: 20px;
+}
+
+// ==========
+// SPAN TITLE
+// ==========
+.span-title {
+  font-family: $title-font;
+  font-size: 2rem;
+}

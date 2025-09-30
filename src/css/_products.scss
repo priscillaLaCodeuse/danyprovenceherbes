@@ -1,0 +1,52 @@
+@use "settings";
+
+#products-items {
+  .container {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .item {
+    text-align: center;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      box-shadow: 0 0 10px settings.$blackShadow;
+      max-width: 250px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+
+  #item-herbes img {
+    background: url(../images/bg-herbes.png) center/contain;
+  }
+
+  #item-thym img {
+    background: url(../images/bg-thym.png) center/contain;
+  }
+
+  #item-romarin img {
+    background: url(../images/bg-romarin.png) center/contain;
+  }
+
+  #item-trio img {
+    background: url(../images/bg-trio.png) center/cover;
+  }
+}

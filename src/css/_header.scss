@@ -1,0 +1,30 @@
+@use "settings";
+
+header {
+  padding: 20px 5vw;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px settings.$blackShadow;
+
+  nav {
+    gap: 10px !important;
+
+    a {
+      color: settings.$color1;
+      font-size: 1rem;
+      border: 1px solid transparent;
+      padding: 10px 20px;
+      border-radius: 5px;
+
+      &:hover {
+        border: 1px solid settings.$color1;
+      }
+    }
+
+    .active {
+      box-shadow: 0 0 10px settings.$blackShadow;
+      background: settings.$color1;
+      color: settings.$white;
+    }
+  }
+}

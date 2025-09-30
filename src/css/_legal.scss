@@ -1,0 +1,10 @@
+.legal {
+  .container {
+    flex-direction: column;
+
+    p,
+    a {
+      text-align: justify;
+    }
+  }
+}

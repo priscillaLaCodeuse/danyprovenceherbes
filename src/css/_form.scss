@@ -1,0 +1,30 @@
+@use "settings";
+
+form {
+  flex-direction: column;
+  gap: 5px !important;
+
+  label {
+    sup {
+      color: settings.$sup;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 5px;
+    border: 1px solid settings.$border;
+    resize: none;
+    outline-color: settings.$color1;
+  }
+
+  input,
+  select {
+    padding: 0px 10px;
+  }
+
+  textarea {
+    padding: 10px;
+  }
+}

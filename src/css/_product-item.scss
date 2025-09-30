@@ -1,0 +1,42 @@
+@use "settings";
+
+.presentation-product {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    border-bottom: 2px solid settings.$border;
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    img {
+      width: 80%;
+      margin: 0 auto;
+      filter: drop-shadow(0 0 10px settings.$black);
+    }
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    h2,
+    p {
+      text-align: justify;
+
+      @media screen and (max-width: 576px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.description-product {
+  text-align: justify;
+
+  @media screen and (max-width: 576px) {
+    text-align: center;
+  }
+}

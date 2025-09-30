@@ -1,0 +1,66 @@
+@use "settings";
+
+.intro {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 2px solid settings.$border;
+}
+
+.infos-contact {
+  flex-direction: column;
+  border-right: 2px solid settings.$border;
+  height: 100%;
+  justify-content: center;
+
+  @media screen and (max-width: 992px) {
+    border-right: none;
+    padding-bottom: 50px;
+    border-bottom: 2px solid settings.$border;
+  }
+
+  p,
+  a {
+    margin-top: 20px;
+    display: block;
+  }
+
+  i,
+  h6 {
+    color: settings.$title;
+  }
+}
+
+.contact-dg {
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  margin: 50px 5vw;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-container-contact {
+  form {
+    @media screen and (max-width: 992px) {
+      gap: 20px !important;
+      margin-top: 50px;
+    }
+
+    label {
+      color: settings.$title;
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 30px;
+    }
+  }
+}
